@@ -1,8 +1,8 @@
 # Problem Set 3: Git & Python Fundamentals
 
 ## Student Information
-Name: YOUR_NAME_HERE
-Date: DATE_HERE
+Name: Ali Akbulut
+Date: 29.09.2025
 
 ## Assignment Overview
 This assignment covers Git version control basics and Python fundamentals including variables, control flow, functions, and file I/O.
@@ -39,4 +39,3 @@ python bonus_password_generator.py  # if completed
 - [ ] (Optional) Bonus password generator completed
 - [ ] All code is properly commented
 - [ ] Repository pushed to GitHub
-Test push: 09/29/2025 18:18:46
