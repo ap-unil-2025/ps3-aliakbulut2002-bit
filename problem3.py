@@ -4,26 +4,23 @@ Analyze a list of numbers provided by the user.
 """
 
 def get_numbers_from_user():
-    """
-    Get numbers from user until they type 'done'.
-    Return a list of numbers.
-
-    Returns:
-        list: List of numbers entered by user
-    """
-    numbers = []
-
+    numbers=[]
     while True:
-        # TODO: Get input from user
-        # TODO: Check if user typed 'done'
-        # TODO: Try to convert to float and add to list
-        # TODO: Handle invalid input gracefully
-        pass
-
+        x=input("Entrez un nombre ")
+        if x=="done":
+            break
+        else : 
+            numbers.append(int(x))
     return numbers
 
 
 def analyze_numbers(numbers):
+    
+    d={}
+    d["count"]=len(numbers)
+    d["sum"]=sum(numbers)
+    return d
+    
     """
     Analyze the list and return a dictionary with:
     - count: number of elements
