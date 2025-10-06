@@ -22,32 +22,21 @@ def add_contact(contacts_list, name, phone, email=""):
     d["name"]=name
     d["phone"]=phone
     d["email"]=email
-    d["id"]=len(contact_list)+1
+    d["id"]=len(contacts_list)+1
     contacts_list.append(d)
     print("Contact added !")
     return d
-    """Add a new contact to our list"""
-    # TODO: Create a dictionary for this contact with:
-    # - "name": name
-    # - "phone": phone
-    # - "email": email
-    # - "id": len(contacts_list) + 1
-
-    # TODO: Add the contact dictionary to contacts_list using .append()
-
-    # TODO: Print a success message like "✓ Added {name} to contacts"
-
-    # TODO: Return the contact dictionary
+  
     
 
 
 def contact_exists(contacts_list, name):
     """Check if a contact already exists"""
-    # TODO: Loop through contacts_list
-    # TODO: For each contact, check if contact["name"].lower() == name.lower()
-    # TODO: If match found, return True
-    # TODO: If no match found after loop, return False
-    pass
+
+    for person in contacts_list:
+        if name.lower()==person["name"].lower():
+            return True
+    return False
 
 
 def add_contact_safe(contacts_list, name, phone, email=""):
@@ -252,10 +241,10 @@ def find_contact_recursive(contacts_list, name, index=0):
 if __name__ == "__main__":
     print("Contact Manager v1.0 - Starter Template")
     print("=" * 50)
-
+    add_contact(contacts, "Akbulut", "Ali","076555555")
     # Test your functions here!
     # Example:
-    # add_contact_safe(contacts, "Alice Smith", "555-0001", "alice@email.com")
+    #add_contact_safe(contacts, "Alice Smith", "555-0001", "alice@email.com")
     # display_all_contacts(contacts)
 
     # Uncomment to run the full menu system:
