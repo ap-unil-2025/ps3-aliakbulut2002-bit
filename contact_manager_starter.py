@@ -17,6 +17,15 @@ contacts = []
 # ============================================================================
 
 def add_contact(contacts_list, name, phone, email=""):
+
+    d={}
+    d["name"]=name
+    d["phone"]=phone
+    d["email"]=email
+    d["id"]=len(contact_list)+1
+    contacts_list.append(d)
+    print("Contact added !")
+    return d
     """Add a new contact to our list"""
     # TODO: Create a dictionary for this contact with:
     # - "name": name
@@ -29,7 +38,7 @@ def add_contact(contacts_list, name, phone, email=""):
     # TODO: Print a success message like "✓ Added {name} to contacts"
 
     # TODO: Return the contact dictionary
-    pass
+    
 
 
 def contact_exists(contacts_list, name):
