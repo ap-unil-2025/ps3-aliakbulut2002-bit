@@ -20,6 +20,8 @@ def analyze_numbers(numbers):
     d["count"]=len(numbers)
     d["sum"]=sum(numbers)
     return d
+
+print ("test")
     
     """
     Analyze the list and return a dictionary with:
